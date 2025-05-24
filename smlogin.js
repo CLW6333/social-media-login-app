@@ -35,6 +35,7 @@ Setup Instructions:
 require('dotenv').config();
 
 const { sequelize, User } = require('./models/users');
+console.log("🗂️  Sequelize is using database:", require('path').resolve('./database.sqlite'));
 const helmet = require('helmet');
 
 // 1. Dependencies
